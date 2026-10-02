@@ -1,14 +1,18 @@
 /**
  * KIIT Society Hub — Shared API Client & UI Helpers
  */
-
 async function fetchApi(endpoint, options = {}) {
+  const token = localStorage.getItem('auth_token');
   const defaultHeaders = {};
   if (!(options.body instanceof FormData)) {
     defaultHeaders['Content-Type'] = 'application/json';
   }
+  if (token) {
+    defaultHeaders['Authorization'] = `Bearer ${token}`;
+  }
 
   const config = {
+    credentials: 'include',
     ...options,
     headers: {
       ...defaultHeaders,
@@ -32,6 +36,7 @@ async function fetchApi(endpoint, options = {}) {
     throw err;
   }
 }
+   
 
 // Auth API
 export async function getMe() {
@@ -41,12 +46,32 @@ export async function getMe() {
     return { user: null };
   }
 }
-
 export async function loginStudent(email, password) {
-  return fetchApi('/api/auth/login', {
+  const data = await fetchApi('/api/auth/login', {
     method: 'POST',
     body: JSON.stringify({ email, password })
   });
+  if (data?.token) {
+    localStorage.setItem('auth_token', data.token);
+  }
+  return data;
+}
+
+export async function loginAdmin(adminCode, password) {
+  const data = await fetchApi('/api/auth/admin-login', {
+    method: 'POST',
+    body: JSON.stringify({ adminCode, password })
+  });
+  if (data?.token) {
+    localStorage.setItem('auth_token', data.token);
+  }
+  return data;
+}
+
+export async function logout() {
+  localStorage.removeItem('auth_token');
+  await fetchApi('/api/auth/logout', { method: 'POST' }).catch(() => {});
+  window.location.href = '/login.html';
 }
 
 export async function signupStudent(userData) {
@@ -56,17 +81,6 @@ export async function signupStudent(userData) {
   });
 }
 
-export async function loginAdmin(adminCode, password) {
-  return fetchApi('/api/auth/admin-login', {
-    method: 'POST',
-    body: JSON.stringify({ adminCode, password })
-  });
-}
-
-export async function logout() {
-  await fetchApi('/api/auth/logout', { method: 'POST' });
-  window.location.href = '/login.html';
-}
 
 // Societies API
 export async function getSocieties(params = {}) {
