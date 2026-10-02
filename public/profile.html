@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile — KIIT Society Hub</title>
+  <meta name="description" content="Manage your KIIT student profile and review your registered campus events.">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main class="container" style="padding-top: 32px; padding-bottom: 60px;">
+    <!-- Profile Grid -->
+    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 32px; align-items: flex-start;">
+      <!-- Student Profile Card & Edit Form -->
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; box-shadow: var(--shadow-sm);">
+        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--border);">
+          <div class="brand-crest" style="width: 52px; height: 52px; font-size: 22px; border-radius: 50%;" id="profile-avatar">S</div>
+          <div>
+            <h1 style="font-size: 20px; margin-bottom: 2px;" id="profile-display-name">Loading...</h1>
+            <div style="font-size: 13px; color: var(--text-muted);" id="profile-display-email">...</div>
+          </div>
+        </div>
+
+        <div id="profile-alert"></div>
+
+        <form id="edit-profile-form">
+          <div class="form-group">
+            <label class="form-label" for="prof-name">Full Name</label>
+            <input type="text" id="prof-name" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="prof-roll">KIIT Roll Number</label>
+            <input type="text" id="prof-roll" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="prof-branch">Academic Branch</label>
+            <select id="prof-branch" class="form-select" required>
+              <option value="Computer Science & Engineering">Computer Science &amp; Engineering (CSE)</option>
+              <option value="Information Technology">Information Technology (IT)</option>
+              <option value="Computer Science & System Engineering">Computer Science &amp; System Engineering (CSSE)</option>
+              <option value="Electronics & Telecommunication">Electronics &amp; Telecommunication (ETC)</option>
+              <option value="Electrical Engineering">Electrical Engineering (EE)</option>
+              <option value="Mechanical Engineering">Mechanical Engineering (ME)</option>
+              <option value="Civil Engineering">Civil Engineering (CE)</option>
+              <option value="School of Biotechnology">School of Biotechnology</option>
+              <option value="School of Management">School of Management (KSOM)</option>
+              <option value="School of Law">School of Law (KLS)</option>
+              <option value="Other School">Other Academic School</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="prof-year">Academic Year</label>
+            <select id="prof-year" class="form-select" required>
+              <option value="1st Year">1st Year</option>
+              <option value="2nd Year">2nd Year</option>
+              <option value="3rd Year">3rd Year</option>
+              <option value="4th Year">4th Year</option>
+              <option value="Postgraduate">Postgraduate</option>
+            </select>
+          </div>
+
+          <button type="submit" id="save-profile-btn" class="btn btn-primary btn-block" style="margin-top: 10px;">
+            Update Profile
+          </button>
+        </form>
+      </div>
+
+      <!-- Right Column: My Registrations -->
+      <div>
+        <div class="section-header" style="margin-bottom: 16px;">
+          <div>
+            <h2 class="section-title">My Registered Events</h2>
+            <p class="section-subtitle">Official registrations confirmed on-site through KIIT Society Hub.</p>
+          </div>
+          <a href="/events.html" class="btn btn-secondary btn-sm">
+            + Discover More Events
+          </a>
+        </div>
+
+        <div id="my-registrations-list">
+          <div style="text-align: center; padding: 48px; color: var(--text-muted);">
+            Loading registrations...
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script type="module" src="/js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+[
+  {
+    "id": "past-krs-1",
+    "societyId": "soc-krs",
+    "title": "National Robocon 2025 National Finals",
+    "date": "2025-08-15",
+    "shortDescription": "Team KRS secured 4th position nationally among 110 university teams with their dual-arm autonomous harvesting rover.",
+    "images": [
+      "/images/gallery/krs_past1.svg",
+      "/images/gallery/krs_past2.svg"
+    ],
+    "createdAt": "2025-08-20T10:00:00.000Z"
+  },
+  {
+    "id": "past-gdsc-1",
+    "societyId": "soc-gdsc",
+    "title": "Google Cloud Community Day Bhubaneswar 2025",
+    "date": "2025-11-10",
+    "shortDescription": "Over 800 attendees gathered at Campus 6 Auditorium for keynote sessions with Google Developer Experts.",
+    "images": [
+      "/images/gallery/gdsc_past1.svg",
+      "/images/gallery/gdsc_past2.svg"
+    ],
+    "createdAt": "2025-11-12T12:00:00.000Z"
+  },
+  {
+    "id": "past-ecell-1",
+    "societyId": "soc-ecell",
+    "title": "KIIT E-Summit 2025",
+    "date": "2025-09-22",
+    "shortDescription": "Welcomed 2,500+ delegates and disbursed ₹35 Lakhs in incubator grant awards to 7 promising student startups.",
+    "images": [
+      "/images/gallery/ecell_past1.svg"
+    ],
+    "createdAt": "2025-09-25T14:00:00.000Z"
+  },
+  {
+    "id": "past-kamakshi-1",
+    "societyId": "soc-kamakshi",
+    "title": "Spring Fest 2025 Choreography Runners-Up",
+    "date": "2025-01-28",
+    "shortDescription": "Kamakshi’s eastern classical production \"Ritu-Chakra\" bagged the silver trophy at IIT Kharagpur.",
+    "images": [
+      "/images/gallery/dance_past1.svg"
+    ],
+    "createdAt": "2025-02-01T10:00:00.000Z"
+  },
+  {
+    "id": "past-kfoc-1",
+    "societyId": "soc-kfoc",
+    "title": "KIIT Fest 2025: Decade Edition",
+    "date": "2025-02-18",
+    "shortDescription": "Three nights of thrilling techno-cultural events featuring international EDM headliners and 30,000 attendees.",
+    "images": [
+      "/images/gallery/fest_past1.svg",
+      "/images/gallery/fest_past2.svg"
+    ],
+    "createdAt": "2025-02-22T10:00:00.000Z"
+  }
+]

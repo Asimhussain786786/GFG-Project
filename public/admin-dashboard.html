@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Society Admin Dashboard — KIIT Society Hub</title>
+  <meta name="description" content="Manage society profile, post recruitments and workshops, review registrations, and curate past event galleries.">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main class="container" style="padding-top: 32px; padding-bottom: 60px;">
+    <!-- Dashboard Header -->
+    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; margin-bottom: 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+      <div style="display: flex; align-items: center; gap: 18px;">
+        <img id="dash-society-logo" src="/images/logos/default.svg" alt="" style="width: 64px; height: 64px; border-radius: var(--radius-sm); border: 1px solid var(--border); object-fit: cover;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+            <span class="badge badge-society" id="dash-society-category">Society</span>
+            <span class="badge" style="background: #F1F5F9; color: var(--text-muted); font-family: monospace;" id="dash-society-code">CODE</span>
+          </div>
+          <h1 style="font-size: 24px; margin-bottom: 2px;" id="dash-society-name">Loading Society...</h1>
+          <div style="font-size: 13px; color: var(--text-muted);" id="dash-admin-email">admin@kiit.ac.in</div>
+        </div>
+      </div>
+      <div>
+        <a id="view-public-page-btn" href="#" class="btn btn-secondary btn-sm" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          View Public Page
+        </a>
+      </div>
+    </div>
+
+    <!-- Dashboard Tabs -->
+    <div class="dashboard-tabs">
+      <button class="tab-btn active" data-tab="tab-events">Upcoming Events</button>
+      <button class="tab-btn" data-tab="tab-past">Past Events Archive</button>
+      <button class="tab-btn" data-tab="tab-details">Edit Society Details</button>
+    </div>
+
+    <!-- TAB 1: UPCOMING EVENTS -->
+    <div id="tab-events" class="tab-pane active">
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+        <div>
+          <h2 style="font-size: 20px;">Manage Upcoming Events</h2>
+          <p style="font-size: 13px; color: var(--text-muted);">Events published here appear on the central Events board and your society page.</p>
+        </div>
+        <button id="add-event-btn" class="btn btn-primary btn-sm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          Add Upcoming Event
+        </button>
+      </div>
+
+      <div id="admin-events-list">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <!-- TAB 2: PAST EVENTS -->
+    <div id="tab-past" class="tab-pane">
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+        <div>
+          <h2 style="font-size: 20px;">Past Events &amp; Gallery</h2>
+          <p style="font-size: 13px; color: var(--text-muted);">Showcase your wins, previous symposiums, and photo highlights to future recruits.</p>
+        </div>
+        <button id="add-past-btn" class="btn btn-primary btn-sm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          Archive Past Event
+        </button>
+      </div>
+
+      <div id="admin-past-list">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <!-- TAB 3: SOCIETY DETAILS -->
+    <div id="tab-details" class="tab-pane">
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 32px; max-width: 760px;">
+        <h2 style="font-size: 20px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border);">
+          Edit Society Profile Information
+        </h2>
+
+        <div id="details-alert"></div>
+
+        <form id="society-details-form">
+          <div class="form-group">
+            <label class="form-label" for="soc-name">Society Name</label>
+            <input type="text" id="soc-name" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="soc-category">Category</label>
+            <select id="soc-category" class="form-select" required>
+              <option value="Technical & Coding">Technical &amp; Coding</option>
+              <option value="Robotics & Hardware">Robotics &amp; Hardware</option>
+              <option value="E-Cell & Entrepreneurship">E-Cell &amp; Entrepreneurship</option>
+              <option value="Cultural & Arts">Cultural &amp; Arts</option>
+              <option value="Social & Literary">Social &amp; Literary</option>
+              <option value="Sports & Gaming">Sports &amp; Gaming</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Society Logo (URL or Upload Image)</label>
+            <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 8px;">
+              <input type="text" id="soc-logo-url" class="form-input" placeholder="e.g. /images/logos/krs.svg">
+              <label class="btn btn-secondary btn-sm" style="white-space: nowrap; cursor: pointer;">
+                <input type="file" id="soc-logo-file" accept="image/*" style="display: none;">
+                Upload Logo
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="soc-short-desc">Short Tagline Description</label>
+            <textarea id="soc-short-desc" class="form-input" rows="2" required placeholder="One-line summary for cards"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="soc-full-desc">Full Society Description &amp; History</label>
+            <textarea id="soc-full-desc" class="form-input" rows="5" required placeholder="Detailed description of society mission, wings, and annual schedule"></textarea>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="form-group">
+              <label class="form-label" for="soc-website">Website URL</label>
+              <input type="url" id="soc-website" class="form-input" placeholder="https://...">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="soc-instagram">Instagram URL</label>
+              <input type="url" id="soc-instagram" class="form-input" placeholder="https://instagram.com/...">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="soc-linkedin">LinkedIn URL</label>
+            <input type="url" id="soc-linkedin" class="form-input" placeholder="https://linkedin.com/company/...">
+          </div>
+
+          <button type="submit" id="save-details-btn" class="btn btn-primary" style="padding: 12px 24px;">
+            Save Society Profile
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODAL: ADD / EDIT UPCOMING EVENT -->
+  <div class="modal-overlay" id="event-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="event-modal-title">Add Upcoming Event</h3>
+        <button class="modal-close" id="event-modal-close">&times;</button>
+      </div>
+      <form id="event-modal-form">
+        <input type="hidden" id="modal-event-id">
+
+        <div class="form-group">
+          <label class="form-label" for="modal-event-title">Event Title</label>
+          <input type="text" id="modal-event-title" class="form-input" required placeholder="e.g. Annual Core Recruitment Drive 2026">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Banner Image (URL or File Upload)</label>
+          <div style="display: flex; gap: 10px;">
+            <input type="text" id="modal-event-banner" class="form-input" placeholder="/images/banners/default.svg">
+            <label class="btn btn-secondary btn-sm" style="white-space: nowrap; cursor: pointer;">
+              <input type="file" id="modal-event-banner-file" accept="image/*" style="display: none;">
+              Upload
+            </label>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <div class="form-group">
+            <label class="form-label" for="modal-event-date">Date (YYYY-MM-DD)</label>
+            <input type="date" id="modal-event-date" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="modal-event-time">Time</label>
+            <input type="text" id="modal-event-time" class="form-input" required placeholder="e.g. 05:00 PM - 07:30 PM">
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <div class="form-group">
+            <label class="form-label" for="modal-event-venue">Campus Venue</label>
+            <input type="text" id="modal-event-venue" class="form-input" required placeholder="e.g. Campus 6 Auditorium">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="modal-event-category">Category</label>
+            <select id="modal-event-category" class="form-select" required>
+              <option value="Recruitment">Recruitment</option>
+              <option value="Hackathon">Hackathon</option>
+              <option value="Workshop">Workshop</option>
+              <option value="Competition">Competition</option>
+              <option value="Cultural">Cultural</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modal-event-desc">Event Description &amp; Details</label>
+          <textarea id="modal-event-desc" class="form-input" rows="4" required placeholder="Describe rounds, agenda, eligibility, prizes, etc."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modal-event-external">External Registration Link (Optional)</label>
+          <input type="url" id="modal-event-external" class="form-input" placeholder="e.g. https://unstop.com/... (leave blank for on-site registration)">
+          <div class="form-helper">If provided, students will be redirected to this link to register. If left blank, students will register directly on-site.</div>
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+          <button type="button" class="btn btn-secondary" id="event-modal-cancel">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="event-modal-submit">Save Event</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: ADD PAST EVENT -->
+  <div class="modal-overlay" id="past-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Archive Past Event</h3>
+        <button class="modal-close" id="past-modal-close">&times;</button>
+      </div>
+      <form id="past-modal-form">
+        <div class="form-group">
+          <label class="form-label" for="modal-past-title">Event / Achievement Title</label>
+          <input type="text" id="modal-past-title" class="form-input" required placeholder="e.g. Robocon 2025 National Finals">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modal-past-date">Date (YYYY-MM-DD)</label>
+          <input type="date" id="modal-past-date" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modal-past-desc">Summary &amp; Accolades</label>
+          <textarea id="modal-past-desc" class="form-input" rows="3" required placeholder="Short description of the milestone, attendee count, or prizes won."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modal-past-image">Gallery Image URL</label>
+          <input type="text" id="modal-past-image" class="form-input" placeholder="/images/gallery/default_past.svg">
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+          <button type="button" class="btn btn-secondary" id="past-modal-cancel">Cancel</button>
+          <button type="submit" class="btn btn-primary">Archive Event</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: VIEW REGISTRATIONS -->
+  <div class="modal-overlay" id="regs-modal">
+    <div class="modal-content" style="max-width: 720px;">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title" id="regs-modal-title">Registered Students</h3>
+          <div style="font-size: 13px; color: var(--text-muted);" id="regs-modal-subtitle"></div>
+        </div>
+        <button class="modal-close" id="regs-modal-close">&times;</button>
+      </div>
+      <div id="regs-modal-body">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script type="module" src="/js/admin-dashboard.js"></script>
+</body>
+</html>

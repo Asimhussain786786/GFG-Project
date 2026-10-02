@@ -1,0 +1,15 @@
+[
+  {
+    "id": "reg-sample-1",
+    "userId": "usr-student-1",
+    "eventId": "evt-gdsc-workshop",
+    "registeredAt": "2026-10-02T15:39:23.518Z",
+    "userSnapshot": {
+      "name": "Asim",
+      "email": "251551179@kiit.ac.in",
+      "rollNumber": "251551179",
+      "branch": "Computer Science & Engineering",
+      "year": "2nd Year"
+    }
+  }
+]

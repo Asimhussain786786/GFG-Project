@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcoming Events &amp; Recruitments — KIIT Society Hub</title>
+  <meta name="description" content="Discover hackathons, technical workshops, cultural concerts, and society recruitments happening across KIIT University.">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main class="container" style="padding-top: 32px; padding-bottom: 60px;">
+    <div style="margin-bottom: 24px;">
+      <h1 style="font-size: 30px; margin-bottom: 8px;">Upcoming Campus Events</h1>
+      <p style="color: var(--text-muted); font-size: 15px;">
+        Register for hackathons, workshops, and core society recruitments happening across all KIIT campuses.
+      </p>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <div class="filter-grid" style="grid-template-columns: 1.8fr 1.2fr 1.2fr 1fr;">
+        <!-- Search -->
+        <div class="search-input-wrapper">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="event-search-input" class="form-input" placeholder="Search event title or venue...">
+        </div>
+
+        <!-- Category -->
+        <div>
+          <select id="event-category-select" class="form-select">
+            <option value="All">All Categories</option>
+            <option value="Recruitment">Recruitment</option>
+            <option value="Hackathon">Hackathon</option>
+            <option value="Workshop">Workshop</option>
+            <option value="Competition">Competition</option>
+            <option value="Cultural">Cultural</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <!-- Society -->
+        <div>
+          <select id="event-society-select" class="form-select">
+            <option value="">All Societies</option>
+            <!-- Populated dynamically -->
+          </select>
+        </div>
+
+        <!-- Sort -->
+        <div>
+          <select id="event-sort-select" class="form-select">
+            <option value="date-asc">Date: Nearest first</option>
+            <option value="date-desc">Date: Latest first</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Events Grid -->
+    <div id="events-grid" class="grid-3">
+      <div style="grid-column: 1 / -1; text-align: center; padding: 48px; color: var(--text-muted);">
+        Loading events...
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script type="module" src="/js/events.js"></script>
+</body>
+</html>

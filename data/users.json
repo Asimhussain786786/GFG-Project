@@ -1,0 +1,24 @@
+[
+  {
+    "id": "usr-student-1",
+    "name": "Asim",
+    "rollNumber": "251551179",
+    "email": "251551179@kiit.ac.in",
+    "branch": "Computer Science & Engineering",
+    "year": "2nd Year",
+    "passwordHash": "$2b$10$jIXNRhOQXVAJZXTwPfPNwugHL17l4/atGwJ3sgqaCJ1E7Z9SYXycK",
+    "role": "student",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "usr-student-2",
+    "name": "Priya Nayak",
+    "rollNumber": "23052140",
+    "email": "priya.nayak@kiit.ac.in",
+    "branch": "Electronics & Telecommunication",
+    "year": "2nd Year",
+    "passwordHash": "$2b$10$jIXNRhOQXVAJZXTwPfPNwugHL17l4/atGwJ3sgqaCJ1E7Z9SYXycK",
+    "role": "student",
+    "createdAt": "2026-01-02T00:00:00.000Z"
+  }
+]

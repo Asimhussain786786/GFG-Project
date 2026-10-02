@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" fill="#831843"/>
+  <rect x="40" y="40" width="720" height="320" rx="16" fill="#500724" stroke="#f472b6" stroke-width="2"/>
+  <text x="80" y="140" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#fbcfe8" letter-spacing="2">DANCE AUDITIONS 2026</text>
+  <text x="80" y="200" font-family="system-ui, sans-serif" font-size="42" font-weight="800" fill="#ffffff">Kamakshi Monsoon Cycle</text>
+  <text x="80" y="245" font-family="system-ui, sans-serif" font-size="18" fill="#f9a8d4">Classical, Western Contemporary, and Street Hip-Hop</text>
+  <rect x="80" y="280" width="160" height="40" rx="8" fill="#db2777"/>
+  <text x="160" y="306" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">KSAC DANCE STUDIO</text>
+</svg>

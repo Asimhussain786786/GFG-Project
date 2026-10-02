@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#500724"/>
+  <rect x="20" y="20" width="560" height="360" rx="12" fill="#831843"/>
+  <path d="M260 160 C260 120, 340 120, 340 160 C340 200, 260 220, 300 240" stroke="#fbcfe8" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <text x="300" y="280" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#fdf2f8" text-anchor="middle">Spring Fest Choreography Silver</text>
+  <text x="300" y="310" font-family="system-ui, sans-serif" font-size="14" fill="#fbcfe8" text-anchor="middle">Ritu-Chakra Production at IIT KGP</text>
+</svg>

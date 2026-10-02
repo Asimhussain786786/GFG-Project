@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration — KIIT Society Hub</title>
+  <meta name="description" content="Register your KIIT student profile to participate in societies, hackathons, and campus activities.">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main class="container">
+    <div class="auth-wrapper" style="max-width: 480px;">
+      <div class="auth-header">
+        <div class="brand-crest" style="margin: 0 auto 12px auto;">K</div>
+        <h1>Create Student Account</h1>
+        <p>Register with your KIIT roll number and official university email.</p>
+      </div>
+
+      <div id="alert-container"></div>
+
+      <form id="signup-form">
+        <div class="form-group">
+          <label class="form-label" for="name">Full Name</label>
+          <input type="text" id="name" class="form-input" placeholder="e.g. Aarav Sharma" required>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <div class="form-group">
+            <label class="form-label" for="rollNumber">KIIT Roll Number</label>
+            <input type="text" id="rollNumber" class="form-input" placeholder="e.g. 22051892" required pattern="\d{5,12}">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="year">Academic Year</label>
+            <select id="year" class="form-select" required>
+              <option value="">Select Year</option>
+              <option value="1st Year">1st Year (Freshman)</option>
+              <option value="2nd Year">2nd Year (Sophomore)</option>
+              <option value="3rd Year">3rd Year (Junior)</option>
+              <option value="4th Year">4th Year (Senior)</option>
+              <option value="Postgraduate">Postgraduate</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">KIIT University Email</label>
+          <input type="email" id="email" class="form-input" placeholder="e.g. 22051892@kiit.ac.in" required>
+          <div class="form-helper">Must end with @kiit.ac.in</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="branch">Academic Branch / School</label>
+          <select id="branch" class="form-select" required>
+            <option value="">Select Branch</option>
+            <option value="Computer Science & Engineering">Computer Science &amp; Engineering (CSE)</option>
+            <option value="Information Technology">Information Technology (IT)</option>
+            <option value="Computer Science & System Engineering">Computer Science &amp; System Engineering (CSSE)</option>
+            <option value="Electronics & Telecommunication">Electronics &amp; Telecommunication (ETC)</option>
+            <option value="Electrical Engineering">Electrical Engineering (EE)</option>
+            <option value="Mechanical Engineering">Mechanical Engineering (ME)</option>
+            <option value="Civil Engineering">Civil Engineering (CE)</option>
+            <option value="School of Biotechnology">School of Biotechnology</option>
+            <option value="School of Management">School of Management (KSOM)</option>
+            <option value="School of Law">School of Law (KLS)</option>
+            <option value="Other School">Other Academic School</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="password">Password</label>
+          <input type="password" id="password" class="form-input" placeholder="Minimum 6 characters" required minlength="6">
+        </div>
+
+        <button type="submit" id="submit-btn" class="btn btn-primary btn-block" style="padding: 12px; margin-top: 10px;">
+          Create Student Account
+        </button>
+      </form>
+
+      <div class="auth-footer">
+        <div>Already registered? <a href="/login.html" style="font-weight: 600;">Log in</a></div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script type="module" src="/js/signup.js"></script>
+</body>
+</html>

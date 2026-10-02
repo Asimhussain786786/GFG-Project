@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" fill="#18181b"/>
+  <rect x="40" y="40" width="720" height="320" rx="16" fill="#27272a" stroke="#ef4444" stroke-width="2"/>
+  <text x="80" y="140" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#f87171" letter-spacing="2">AUTOMOTIVE &amp; FORMULA RACING</text>
+  <text x="80" y="200" font-family="system-ui, sans-serif" font-size="40" font-weight="800" fill="#ffffff">Formula Student &amp; BAJA Inductions</text>
+  <text x="80" y="245" font-family="system-ui, sans-serif" font-size="18" fill="#d4d4d8">Powertrain, EV Battery Packs, Chassis Fabrication &amp; Aero</text>
+  <rect x="80" y="280" width="160" height="40" rx="8" fill="#dc2626"/>
+  <text x="160" y="306" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">CAMPUS 12 WORKSHOP</text>
+</svg>

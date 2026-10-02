@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Societies Directory — KIIT Society Hub</title>
+  <meta name="description" content="Browse all official KIIT student societies, technical chapters, cultural wings, and innovation cells.">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main class="container" style="padding-top: 32px; padding-bottom: 60px;">
+    <div style="margin-bottom: 24px;">
+      <h1 style="font-size: 30px; margin-bottom: 8px;">Explore KIIT Societies</h1>
+      <p style="color: var(--text-muted); font-size: 15px;">
+        Discover student chapters across robotics, coding, design, business, dance, and literature. Join core teams and hone your craft.
+      </p>
+    </div>
+
+    <!-- Filter & Search Bar -->
+    <div class="filter-bar">
+      <div class="filter-grid" style="grid-template-columns: 2fr 1fr;">
+        <div class="search-input-wrapper">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="search-input" class="form-input" placeholder="Search by society name or keyword...">
+        </div>
+        <div>
+          <select id="category-select" class="form-select">
+            <option value="All">All Categories</option>
+            <option value="Technical & Coding">Technical &amp; Coding</option>
+            <option value="Robotics & Hardware">Robotics &amp; Hardware</option>
+            <option value="E-Cell & Entrepreneurship">E-Cell &amp; Entrepreneurship</option>
+            <option value="Cultural & Arts">Cultural &amp; Arts</option>
+            <option value="Social & Literary">Social &amp; Literary</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Pills -->
+    <div class="category-pills" id="category-pills">
+      <button class="category-pill active" data-category="All">All</button>
+      <button class="category-pill" data-category="Technical & Coding">Technical &amp; Coding</button>
+      <button class="category-pill" data-category="Robotics & Hardware">Robotics &amp; Hardware</button>
+      <button class="category-pill" data-category="E-Cell & Entrepreneurship">E-Cell</button>
+      <button class="category-pill" data-category="Cultural & Arts">Cultural &amp; Arts</button>
+      <button class="category-pill" data-category="Social & Literary">Social &amp; Literary</button>
+    </div>
+
+    <!-- Societies Grid -->
+    <div id="societies-grid" class="grid-3">
+      <div style="grid-column: 1 / -1; text-align: center; padding: 48px; color: var(--text-muted);">
+        Loading societies...
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script type="module" src="/js/societies.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "admin-soc-krs",
+    "societyId": "soc-krs",
+    "adminCode": "KIIT-KRS-2026",
+    "email": "admin.krs@kiit.ac.in",
+    "passwordHash": "$2b$10$sh89bekJI/gAODK/T5c2eOgUNSxO//he93JoCsRpGOKEAM3cSlJDS",
+    "role": "society_admin",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "admin-soc-gdsc",
+    "societyId": "soc-gdsc",
+    "adminCode": "KIIT-GDSC-2026",
+    "email": "admin.gdsc@kiit.ac.in",
+    "passwordHash": "$2b$10$sh89bekJI/gAODK/T5c2eOgUNSxO//he93JoCsRpGOKEAM3cSlJDS",
+    "role": "society_admin",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "admin-soc-ecell",
+    "societyId": "soc-ecell",
+    "adminCode": "KIIT-ECELL-2026",
+    "email": "admin.ecell@kiit.ac.in",
+    "passwordHash": "$2b$10$sh89bekJI/gAODK/T5c2eOgUNSxO//he93JoCsRpGOKEAM3cSlJDS",
+    "role": "society_admin",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "admin-soc-kamakshi",
+    "societyId": "soc-kamakshi",
+    "adminCode": "KIIT-KMKS-2026",
+    "email": "admin.kamakshi@kiit.ac.in",
+    "passwordHash": "$2b$10$sh89bekJI/gAODK/T5c2eOgUNSxO//he93JoCsRpGOKEAM3cSlJDS",
+    "role": "society_admin",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "admin-soc-kronicle",
+    "societyId": "soc-kronicle",
+    "adminCode": "KIIT-KRON-2026",
+    "email": "admin.kronicle@kiit.ac.in",
+    "passwordHash": "$2b$10$sh89bekJI/gAODK/T5c2eOgUNSxO//he93JoCsRpGOKEAM3cSlJDS",
+    "role": "society_admin",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "admin-soc-kfoc",
+    "societyId": "soc-kfoc",
+    "adminCode": "KIIT-KFOC-2026",
+    "email": "admin.kfoc@kiit.ac.in",
+    "passwordHash": "$2b$10$sh89bekJI/gAODK/T5c2eOgUNSxO//he93JoCsRpGOKEAM3cSlJDS",
+    "role": "society_admin",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "admin-soc-fet",
+    "societyId": "soc-fet",
+    "adminCode": "KIIT-FET-2026",
+    "email": "admin.fet@kiit.ac.in",
+    "passwordHash": "$2b$10$sh89bekJI/gAODK/T5c2eOgUNSxO//he93JoCsRpGOKEAM3cSlJDS",
+    "role": "society_admin",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "admin-soc-korus",
+    "societyId": "soc-korus",
+    "adminCode": "KIIT-KORUS-2026",
+    "email": "admin.korus@kiit.ac.in",
+    "passwordHash": "$2b$10$sh89bekJI/gAODK/T5c2eOgUNSxO//he93JoCsRpGOKEAM3cSlJDS",
+    "role": "society_admin",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "admin-soc-kas",
+    "societyId": "soc-kas",
+    "adminCode": "KIIT-KAS-2026",
+    "email": "admin.kas@kiit.ac.in",
+    "passwordHash": "$2b$10$sh89bekJI/gAODK/T5c2eOgUNSxO//he93JoCsRpGOKEAM3cSlJDS",
+    "role": "society_admin",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "admin-soc-klarity",
+    "societyId": "soc-klarity",
+    "adminCode": "KIIT-KLAR-2026",
+    "email": "admin.klarity@kiit.ac.in",
+    "passwordHash": "$2b$10$sh89bekJI/gAODK/T5c2eOgUNSxO//he93JoCsRpGOKEAM3cSlJDS",
+    "role": "society_admin",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  }
+]

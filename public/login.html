@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Login — KIIT Society Hub</title>
+  <meta name="description" content="Log in with your official KIIT university credentials to register for campus hackathons and society recruitments.">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main class="container">
+    <div class="auth-wrapper">
+      <div class="auth-header">
+        <div class="brand-crest" style="margin: 0 auto 12px auto;">K</div>
+        <h1>Student Login</h1>
+        <p>Sign in with your official KIIT email to manage registrations.</p>
+      </div>
+
+      <div id="alert-container"></div>
+
+      <form id="login-form">
+        <div class="form-group">
+          <label class="form-label" for="email">KIIT Email</label>
+          <input type="email" id="email" class="form-input" placeholder="e.g. 22051892@kiit.ac.in" required>
+          <div class="form-helper">Only @kiit.ac.in email addresses are accepted</div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="password">Password</label>
+          <input type="password" id="password" class="form-input" placeholder="••••••••" required>
+        </div>
+
+        <button type="submit" id="submit-btn" class="btn btn-primary btn-block" style="padding: 12px; margin-top: 10px;">
+          Log In
+        </button>
+      </form>
+
+      <div style="margin-top: 18px; padding: 12px; background: var(--surface-alt); border-radius: var(--radius-md); font-size: 12px; color: var(--text-muted);">
+        <strong>Student Account:</strong><br>
+        Email: <code>251551179@kiit.ac.in</code><br>
+        Password: <code>asim1179</code>
+      </div>
+
+      <div class="auth-footer">
+        <div>Don't have an account? <a href="/signup.html" style="font-weight: 600;">Sign up</a></div>
+        <div style="margin-top: 8px;">
+          Society Executive? <a href="/admin-login.html" style="font-weight: 600; color: var(--accent);">Admin Login with Code</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script type="module" src="/js/login.js"></script>
+</body>
+</html>

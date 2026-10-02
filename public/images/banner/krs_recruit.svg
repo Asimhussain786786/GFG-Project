@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" fill="#064e3b"/>
+  <rect x="40" y="40" width="720" height="320" rx="16" fill="#022c22" stroke="#047857" stroke-width="2"/>
+  <circle cx="640" cy="200" r="100" fill="#10b981" opacity="0.12"/>
+  <path d="M600 160 L680 160 L680 240 L600 240 Z" stroke="#34d399" stroke-width="4" fill="none"/>
+  <circle cx="640" cy="200" r="24" fill="#34d399"/>
+  <text x="80" y="140" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#34d399" letter-spacing="2">KIIT ROBOTICS SOCIETY</text>
+  <text x="80" y="200" font-family="system-ui, sans-serif" font-size="42" font-weight="800" fill="#ffffff">Annual Recruitment Drive</text>
+  <text x="80" y="245" font-family="system-ui, sans-serif" font-size="18" fill="#a7f3d0">Firmware, Mechanical, Computer Vision, &amp; Management Tracks</text>
+  <rect x="80" y="280" width="160" height="40" rx="8" fill="#059669"/>
+  <text x="160" y="306" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">CAMPUS 3 AUDI</text>
+</svg>
