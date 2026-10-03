@@ -11,5 +11,31 @@
       "branch": "Computer Science & Engineering",
       "year": "2nd Year"
     }
+  },
+  {
+    "id": "reg-1791035285223-vdbck",
+    "userId": "usr-1791035236799-bjqt2",
+    "eventId": "evt-ecell-workshop",
+    "registeredAt": "2026-10-03T13:48:05.223Z",
+    "userSnapshot": {
+      "name": "krish kumar",
+      "email": "251551180@kiit.ac.in",
+      "rollNumber": "251551180",
+      "branch": "Computer Science & Engineering(AI/ML)",
+      "year": "2nd Year"
+    }
+  },
+  {
+    "id": "reg-1791035430474-e369a",
+    "userId": "usr-1791035236799-bjqt2",
+    "eventId": "evt-1791035376149-h5n5u",
+    "registeredAt": "2026-10-03T13:50:30.474Z",
+    "userSnapshot": {
+      "name": "krish kumar",
+      "email": "251551180@kiit.ac.in",
+      "rollNumber": "251551180",
+      "branch": "Computer Science & Engineering(AI/ML)",
+      "year": "2nd Year"
+    }
   }
 ]

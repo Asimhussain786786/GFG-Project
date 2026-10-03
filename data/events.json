@@ -145,5 +145,17 @@
     "category": "Cultural",
     "fullDescription": "Explore the ancient temple architecture and bustling morning flower markets of Old Town Bhubaneswar with veteran photographers. Learn manual camera settings, framing, golden-hour exposure, and visual storytelling. All equipment from smartphones to full-frame DSLRs welcome.",
     "createdAt": "2026-02-12T18:00:00.000Z"
+  },
+  {
+    "societyId": "soc-ecell",
+    "title": "recruitment",
+    "bannerImage": "/images/banners/default.svg",
+    "date": "2026-10-22",
+    "time": "4 - 5",
+    "venue": "campus 25",
+    "category": "Recruitment",
+    "fullDescription": "recrutiment drive is live!!",
+    "id": "evt-1791035376149-h5n5u",
+    "createdAt": "2026-10-03T13:49:36.149Z"
   }
 ]

@@ -20,5 +20,16 @@
     "passwordHash": "$2b$10$jIXNRhOQXVAJZXTwPfPNwugHL17l4/atGwJ3sgqaCJ1E7Z9SYXycK",
     "role": "student",
     "createdAt": "2026-01-02T00:00:00.000Z"
+  },
+  {
+    "name": "krish kumar",
+    "rollNumber": "251551180",
+    "email": "251551180@kiit.ac.in",
+    "branch": "Computer Science & Engineering(AI/ML)",
+    "year": "2nd Year",
+    "passwordHash": "$2b$10$8dakjDoK7NOZY4su7uCF.OfQaHmJdVXxHJiZzm2nieQ6f5HEintpC",
+    "id": "usr-1791035236799-bjqt2",
+    "role": "student",
+    "createdAt": "2026-10-03T13:47:16.799Z"
   }
 ]
